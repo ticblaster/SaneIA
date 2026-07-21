@@ -32,7 +32,7 @@ export default function TeamSection() {
 
         <p className="mx-auto mt-8 max-w-2xl text-center text-xs text-slate-400">
           Não há vínculo societário formal constituído entre os membros até o momento. As funções
-          descritas refletem a divisão de responsabilidades pretendida durante a pré-incubação.
+          descritas refletem a divisão de responsabilidades pretendida para a etapa de pré-incubação.
         </p>
       </div>
     </section>

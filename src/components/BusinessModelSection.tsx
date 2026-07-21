@@ -18,7 +18,7 @@ export default function BusinessModelSection() {
         </ul>
 
         <p className="mt-8 inline-flex items-center rounded-full bg-amber-50 px-3.5 py-1.5 text-xs font-semibold text-amber-700 ring-1 ring-inset ring-amber-200">
-          Modelo sujeito a validação durante a pré-incubação.
+          Modelo sujeito a validação caso o projeto seja selecionado para a pré-incubação.
         </p>
       </div>
     </section>

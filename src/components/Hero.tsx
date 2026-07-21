@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
         <div className="flex flex-col gap-6">
           <span className="inline-flex w-fit items-center rounded-full bg-brand-fog px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wide text-brand-teal">
-            Proposta em pré-incubação · Startup UFT
+            Proposta candidata à pré-incubação · Startup UFT
           </span>
           <h1 className="text-4xl font-bold leading-tight text-brand-deep text-balance sm:text-5xl">
             Transformar dados operacionais em ações para reduzir perdas de água.

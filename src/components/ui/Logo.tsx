@@ -42,7 +42,7 @@ export function Logo({ className = '', withWordmark = true }: LogoProps) {
             SaneIA <span className="text-brand-blue">Água</span>
           </span>
           <span className="text-[11px] font-medium uppercase tracking-wide text-slate-500">
-            proposta em pré-incubação
+            proposta para pré-incubação
           </span>
         </span>
       )}

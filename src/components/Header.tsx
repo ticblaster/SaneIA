@@ -51,7 +51,7 @@ export default function Header() {
             href="#painel"
             className="focus-ring inline-flex items-center rounded-full bg-brand-blue px-5 py-2.5 text-sm font-semibold text-white shadow-card transition-colors hover:bg-brand-deep"
           >
-            Conhecer o MVP
+            Conhecer o protótipo
           </a>
         </div>
 
@@ -89,7 +89,7 @@ export default function Header() {
                 onClick={() => setMenuOpen(false)}
                 className="focus-ring block rounded-full bg-brand-blue px-4 py-2.5 text-center text-sm font-semibold text-white"
               >
-                Conhecer o MVP
+                Conhecer o protótipo
               </a>
             </li>
           </ul>
