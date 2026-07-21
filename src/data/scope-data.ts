@@ -105,7 +105,7 @@ export const impactCards = [
 
 export const roadmapPhases = [
   { phase: 'Fase 1', title: 'Validação do problema', description: 'Entrevistas exploratórias e levantamento de hipóteses junto a potenciais clientes.' },
-  { phase: 'Fase 2', title: 'MVP com dados sintéticos e públicos', description: 'Construção do protótipo funcional demonstrado neste hotsite.' },
+  { phase: 'Fase 2', title: 'MVP com dados sintéticos e públicos', description: 'Evolução do protótipo visual para um MVP funcional com dados públicos e sintéticos.' },
   { phase: 'Fase 3', title: 'Avaliação com profissionais do setor', description: 'Testes de usabilidade e aderência com gestores e equipes técnicas.' },
   { phase: 'Fase 4', title: 'Piloto com dados reais anonimizados', description: 'Validação controlada em ambiente real, sujeita a acordos específicos.' },
   { phase: 'Fase 5', title: 'Integrações e expansão comercial', description: 'Ampliação de funcionalidades e modelo comercial conforme aprendizados.' },
