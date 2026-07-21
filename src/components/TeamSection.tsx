@@ -1,7 +1,6 @@
 import { GraduationCap } from 'lucide-react';
 import SectionHeading from './ui/SectionHeading';
 import Card from './ui/Card';
-import Badge from './ui/Badge';
 import { teamMembers } from '../data/team-data';
 
 export default function TeamSection() {
@@ -27,11 +26,6 @@ export default function TeamSection() {
                   </li>
                 ))}
               </ul>
-              {member.editable && (
-                <Badge tone="neutral" className="w-fit">
-                  Espaço editável
-                </Badge>
-              )}
             </Card>
           ))}
         </div>
