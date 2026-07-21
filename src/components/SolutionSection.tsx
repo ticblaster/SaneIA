@@ -8,7 +8,7 @@ export default function SolutionSection() {
     <section id="solucao" className="section-anchor bg-white py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Solução proposta"
+          eyebrow="Nossa proposta de solução"
           title="Uma plataforma formada por cinco capacidades integradas"
           align="center"
         />

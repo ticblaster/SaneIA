@@ -13,18 +13,19 @@ export default function WaterLossBigNumber() {
             da água potável é perdida nos sistemas de distribuição no Brasil.
           </p>
           <p className="max-w-xl text-sm leading-relaxed text-blue-200/80">
-            O percentual corresponde ao indicador nacional apresentado no Estudo de Perdas de
-            Água 2026, divulgado pelo Instituto Trata Brasil em parceria com a GO Associados, com
-            referência a dados do SINISA, ano-base 2024. Este indicador é nacional: não representa
-            especificamente Palmas, a BRK Ambiental ou qualquer organização individual.
+            O índice nacional apresentado no Estudo de Perdas de Água 2026 é de 39,53%,
+            arredondado aqui para 39,5%. O estudo foi publicado pelo Instituto Trata Brasil em
+            parceria com a GO Associados, com referência a dados do SINISA, ano-base 2024. Este
+            indicador é nacional: não representa especificamente Palmas, a BRK Ambiental ou
+            qualquer organização individual.
           </p>
           <a
-            href="https://tratabrasil.org.br/reduzir-perdas-de-agua-no-brasil-poderia-abastecer-populacao-maior-que-um-dos-paises-sede-da-copa-do-mundo-2026/"
+            href="https://tratabrasil.org.br/perdas-de-agua-2026/"
             target="_blank"
             rel="noopener noreferrer"
             className="focus-ring mt-1 inline-flex w-fit items-center gap-1.5 text-sm font-semibold text-white underline decoration-blue-300/60 underline-offset-4 hover:decoration-white"
           >
-            Ler o estudo do Instituto Trata Brasil
+            Consultar o Estudo de Perdas de Água 2026
             <ExternalLink size={14} aria-hidden="true" />
           </a>
         </div>

@@ -32,14 +32,20 @@ export const audienceCards = [
   { title: 'Gestores de perdas e eficiência', description: 'Responsáveis por indicadores, metas e priorização de investimentos operacionais.' },
 ];
 
-export const problemCards = [
+export const problemEvidenceCards = [
+  'Vazamentos e extravasamentos',
+  'Falhas operacionais',
+  'Erros de medição',
+  'Consumos não autorizados',
+  'Inconsistências cadastrais',
+  'Informações ausentes ou incompletas',
+];
+
+export const problemHypothesisCards = [
   'Dados dispersos em planilhas e sistemas legados',
   'Dificuldade para identificar regiões críticas',
   'Priorização manual de inspeções',
-  'Falhas de medição',
   'Consumos anormais não detectados a tempo',
-  'Vazamentos físicos',
-  'Perdas aparentes',
   'Ordens de serviço desconectadas das análises',
   'Baixa capacidade analítica de pequenos operadores',
 ];
