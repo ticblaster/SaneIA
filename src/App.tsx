@@ -6,6 +6,7 @@ import AudienceSection from './components/AudienceSection';
 import SolutionSection from './components/SolutionSection';
 import PipelineSection from './components/PipelineSection';
 import DashboardDemo from './components/DashboardDemo';
+import PrototypeShowcaseSection from './components/PrototypeShowcaseSection';
 import ExplainabilitySection from './components/ExplainabilitySection';
 import ScopeSection from './components/ScopeSection';
 import NonScopeSection from './components/NonScopeSection';
@@ -36,6 +37,7 @@ export default function App() {
         <SolutionSection />
         <PipelineSection />
         <DashboardDemo />
+        <PrototypeShowcaseSection />
         <ExplainabilitySection />
         <ScopeSection />
         <NonScopeSection />

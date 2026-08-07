@@ -1,4 +1,4 @@
-import { ArrowRight, LayoutDashboard } from 'lucide-react';
+import { ArrowRight, ExternalLink, LayoutDashboard } from 'lucide-react';
 import HeroIllustration from './illustrations/HeroIllustration';
 
 export default function Hero() {
@@ -32,10 +32,20 @@ export default function Hero() {
               <LayoutDashboard size={18} aria-hidden="true" />
               Explorar painel demonstrativo
             </a>
+            <a
+              href="https://saneia-demo.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="focus-ring inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-brand-teal underline decoration-brand-teal/40 underline-offset-4 transition-colors hover:text-brand-navy"
+            >
+              Explorar protótipo interativo
+              <ExternalLink size={16} aria-hidden="true" />
+            </a>
           </div>
           <p className="pt-1 text-xs text-slate-500">
             MVP demonstrativo com dados sintéticos. Nenhum dado exibido representa clientes ou
-            municípios reais.
+            municípios reais. O protótipo interativo é uma demonstração conceitual, também com dados
+            100% sintéticos.
           </p>
         </div>
 
