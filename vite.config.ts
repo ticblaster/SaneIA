@@ -8,6 +8,9 @@ const basePath = process.env.VITE_BASE_PATH ?? '/SaneIA/';
 export default defineConfig({
   base: basePath,
   plugins: [react()],
+  define: {
+    __BUILD_TIME__: JSON.stringify(new Date().toISOString()),
+  },
   build: {
     outDir: 'dist',
   },

@@ -1,5 +1,14 @@
 import { Logo } from './ui/Logo';
 
+const buildTimestamp = new Intl.DateTimeFormat('pt-BR', {
+  timeZone: 'America/Araguaina',
+  day: '2-digit',
+  month: '2-digit',
+  year: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+}).format(new Date(__BUILD_TIME__));
+
 export default function Footer() {
   return (
     <footer className="bg-brand-navy py-10 text-blue-100/70">
@@ -12,7 +21,8 @@ export default function Footer() {
         </p>
       </div>
       <p className="mx-auto mt-6 max-w-7xl px-4 text-[11px] text-blue-200/50 sm:px-6 lg:px-8">
-        © {new Date().getFullYear()} SaneIA Água. Hotsite institucional e protótipo visual.
+        © {new Date().getFullYear()} SaneIA Água. Hotsite institucional e protótipo visual.{' '}
+        <span className="text-blue-200/30">· build {buildTimestamp}</span>
       </p>
     </footer>
   );
