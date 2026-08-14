@@ -49,7 +49,9 @@ export default function Header() {
 
         <div className="hidden lg:block">
           <a
-            href="#painel"
+            href="https://saneia-demo.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="focus-ring inline-flex items-center rounded-full bg-brand-blue px-5 py-2.5 text-sm font-semibold text-white shadow-card transition-colors hover:bg-brand-deep"
           >
             Conhecer o protótipo
@@ -86,7 +88,9 @@ export default function Header() {
             ))}
             <li className="pt-2">
               <a
-                href="#painel"
+                href="https://saneia-demo.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMenuOpen(false)}
                 className="focus-ring block rounded-full bg-brand-blue px-4 py-2.5 text-center text-sm font-semibold text-white"
               >
