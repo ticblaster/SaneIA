@@ -5,6 +5,7 @@ import { Logo } from './ui/Logo';
 const navItems = [
   { href: '#problema', label: 'Problema' },
   { href: '#solucao', label: 'Solução' },
+  { href: '#primeiro-mvp', label: 'Primeiro MVP' },
   { href: '#pipeline', label: 'Pipeline' },
   { href: '#painel', label: 'Painel' },
   { href: '#escopo', label: 'Escopo' },

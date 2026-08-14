@@ -142,6 +142,21 @@ export const serviceOrders: ServiceOrder[] = [
   { id: 'OS-3260', ligacao: '013560', setor: 'Região Oeste', status: 'Descartada', prioridade: 'Baixa', aberturaSimulada: '12 dias atrás' },
 ];
 
+export const dataReliability = {
+  score: 92,
+  label: 'Boa',
+} as const;
+
+export const dataQualityIssues = [
+  'Registros duplicados',
+  'Campos obrigatórios ausentes',
+  'Coordenadas ausentes',
+  'Leituras zeradas',
+  'Leituras muito discrepantes',
+  'Dados antigos',
+  'Cobertura territorial incompleta',
+] as const;
+
 export const explainabilityFactors = [
   { factor: 'Consumo 180% acima da média', weight: 90 },
   { factor: 'Crescimento por três ciclos consecutivos', weight: 74 },

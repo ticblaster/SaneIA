@@ -10,12 +10,12 @@ export default function Hero() {
             Proposta candidata à pré-incubação · Startup UFT
           </span>
           <h1 className="text-4xl font-bold leading-tight text-brand-deep text-balance sm:text-5xl">
-            Transformar dados operacionais em ações para reduzir perdas de água.
+            Inteligência operacional para transformar dados de saneamento em prioridades de ação.
           </h1>
           <p className="max-w-xl text-lg leading-relaxed text-slate-600">
-            A SaneIA Água propõe uma camada de inteligência capaz de importar dados, identificar
-            anomalias, priorizar inspeções e apoiar decisões operacionais em sistemas de
-            abastecimento de água.
+            A SaneIA cruza dados operacionais, históricos e territoriais para identificar padrões,
+            priorizar regiões críticas e apoiar equipes na decisão de onde investigar e agir
+            primeiro. A redução de perdas e vazamentos é o primeiro caso de uso.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <a

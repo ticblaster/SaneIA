@@ -78,15 +78,18 @@ export const hypothesesToValidate = [
 ];
 
 export const validationSteps = [
-  'Entrevistas exploratórias com potenciais clientes',
-  'Levantamento dos dados disponíveis',
-  'Ajuste do escopo preliminar',
-  'Construção do MVP demonstrativo',
-  'Teste com dados sintéticos',
-  'Avaliação com profissionais do setor',
-  'Possível piloto controlado',
-  'Evolução do modelo de negócio',
+  { label: 'Entrevistas exploratórias com potenciais clientes', done: true },
+  { label: 'Levantamento dos dados disponíveis', done: false },
+  { label: 'Ajuste do escopo preliminar', done: true },
+  { label: 'Construção do MVP demonstrativo', done: true },
+  { label: 'Teste com dados sintéticos', done: true },
+  { label: 'Avaliação com profissionais do setor', done: false },
+  { label: 'Possível piloto controlado', done: false },
+  { label: 'Evolução do modelo de negócio', done: false },
 ];
+
+export const nextValidationHypothesis =
+  'Uma hipótese inicial é priorizar trechos ou regiões com maior probabilidade de recorrência de vazamentos utilizando histórico de serviços, idade/material da rede e pressão hidráulica.';
 
 export const businessModelItems = [
   'Modelo SaaS por assinatura',
@@ -98,15 +101,35 @@ export const businessModelItems = [
   'Possibilidade futura de contratação pública',
 ];
 
-export const impactCards = [
-  'Redução de desperdício de água tratada',
-  'Priorização mais eficiente das inspeções',
-  'Diminuição do tempo de resposta operacional',
-  'Apoio à manutenção preventiva',
-  'Melhor uso de recursos públicos',
-  'Redução de perdas de receita associadas a falhas de medição',
-  'Contribuição para a sustentabilidade hídrica',
-  'Melhoria do serviço prestado à população',
+export const impactCategories = [
+  {
+    category: 'Econômico',
+    items: [
+      'Melhor alocação das equipes',
+      'Priorização de inspeções',
+      'Redução de retrabalho',
+      'Redução de intervenções pouco produtivas',
+      'Identificação mais rápida de regiões críticas',
+      'Apoio à redução de água perdida',
+      'Melhor utilização de orçamento operacional',
+    ],
+  },
+  {
+    category: 'Ambiental',
+    items: [
+      'Redução potencial do desperdício de água tratada',
+      'Melhor uso de energia e recursos utilizados na produção e distribuição',
+      'Apoio à sustentabilidade dos sistemas de abastecimento',
+    ],
+  },
+  {
+    category: 'Social',
+    items: [
+      'Maior confiabilidade do abastecimento',
+      'Potencial redução de interrupções',
+      'Melhor uso de recursos públicos e privados destinados à infraestrutura essencial',
+    ],
+  },
 ];
 
 export const roadmapPhases = [
@@ -123,13 +146,24 @@ export const pipelineSources = [
   'Histórico de consumo',
   'Cadastro de ligações',
   'Setores e regiões',
-  'Ordens de serviço',
-  'Ocorrências de campo',
+  'Ordens de serviço e histórico de intervenções',
+  'Ocorrências de campo e vazamentos confirmados',
+  'Idade e material da rede/ativos',
+  'Pressão hidráulica e dispositivos de controle',
+  'Tipo de solo e obras externas próximas à rede',
+  'Telemetria, quando disponível',
 ];
 
 export const pipelineExtraction = ['Upload CSV', 'Upload Excel', 'Importação manual', 'Futuras integrações'];
 
-export const pipelineValidation = ['Checagem de campos', 'Dados ausentes', 'Duplicidades', 'Inconsistências', 'Normalização de unidades'];
+export const pipelineValidation = [
+  'Checagem de campos',
+  'Dados ausentes',
+  'Duplicidades',
+  'Inconsistências',
+  'Normalização de unidades',
+  'Score de confiabilidade dos dados',
+];
 
 export const pipelineTransformation = ['Cálculo de consumo', 'Médias históricas', 'Variações', 'Sazonalidade', 'Agregação por setor'];
 
@@ -139,7 +173,25 @@ export const pipelineIntelligence = [
   'Detecção de outliers',
   'Análise de recorrência',
   'Comparação com histórico',
-  'Score de prioridade',
+  'Criticidade operacional',
+  'Prioridade de investigação',
+  'Impacto econômico potencial',
 ];
 
 export const pipelineOutputs = ['Dashboard', 'Alertas', 'Ranking', 'Regiões críticas', 'Recomendações', 'Ordens de serviço'];
+
+export const radarConceptualAttributes = [
+  'Idade da rede',
+  'Idade do ativo',
+  'Material da tubulação',
+  'Pressão hidráulica',
+  'Histórico de ordens de serviço',
+  'Recorrência de ocorrências',
+  'Vazamentos confirmados',
+  'Tipo de solo',
+  'Obras externas próximas à rede',
+  'Possíveis danos mecânicos',
+  'Dispositivos de controle de pressão',
+  'Telemetria, quando disponível',
+  'Qualidade e confiabilidade dos dados',
+];

@@ -4,6 +4,8 @@ import Card from './ui/Card';
 import Badge from './ui/Badge';
 import { problemEvidenceCards, problemHypothesisCards } from '../data/scope-data';
 
+const problemChain = ['Dado', 'Contexto', 'Prioridade', 'Ação'];
+
 export default function ProblemSection() {
   return (
     <section id="problema" className="section-anchor bg-white py-20 sm:py-24">
@@ -20,14 +22,30 @@ export default function ProblemSection() {
                 consumos não autorizados e inconsistências cadastrais.
               </span>
               <span className="mt-3 block">
-                A SaneIA parte da hipótese de que parte dos operadores possui dados relevantes, mas
-                enfrenta dificuldades para integrá-los e transformá-los em prioridades
-                operacionais. Essa hipótese será validada por meio de entrevistas com prestadores
-                de abastecimento.
+                Sistemas de abastecimento geram grande quantidade de dados sobre serviços, rede,
+                pressão, medições e ocorrências. O desafio não é apenas coletar esses dados: é
+                transformá-los em informação operacional capaz de indicar onde investigar, por que
+                uma região merece atenção e onde os recursos de campo podem produzir maior
+                impacto.
               </span>
             </>
           }
         />
+
+        <div className="mt-8 flex flex-wrap items-center gap-2" aria-label="Dado, Contexto, Prioridade, Ação">
+          {problemChain.map((step, index) => (
+            <div key={step} className="flex items-center gap-2">
+              <span className="rounded-full bg-brand-fog px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-brand-teal">
+                {step}
+              </span>
+              {index < problemChain.length - 1 && (
+                <span className="text-brand-blue" aria-hidden="true">
+                  →
+                </span>
+              )}
+            </div>
+          ))}
+        </div>
 
         <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div>
