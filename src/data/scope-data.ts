@@ -70,7 +70,7 @@ export const solutionCapabilities = [
   { title: 'Engenharia e correlação de atributos', description: 'Cruzamento de sinais operacionais, históricos, hidráulicos, geográficos e de serviços em atributos analisáveis.' },
   { title: 'Inteligência operacional', description: 'Modelos estatísticos e de Machine Learning selecionados conforme o caso de uso, para detectar padrões, anomalias e prioridades.' },
   { title: 'Entrega e integração dos resultados', description: 'Resultados disponibilizados para os sistemas, BI ou dashboards que o operador já utiliza, ou pela interface própria do SaneIA.' },
-  { title: 'Feedback operacional e aprendizado', description: 'Resultados de campo retornam ao sistema, ajudando a calibrar e evoluir a inteligência ao longo do tempo.' },
+  { title: 'Feedback operacional e aprendizado', description: 'Os resultados de campo podem retornar ao histórico e apoiar a recalibração e evolução da inteligência ao longo do tempo.' },
 ];
 
 export const useCases = [

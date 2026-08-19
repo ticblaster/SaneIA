@@ -51,7 +51,7 @@ export default function ProductLogicSection() {
 
         <p className="mx-auto mt-6 flex max-w-2xl items-center justify-center gap-2 text-center text-xs font-medium text-blue-200/70">
           <RefreshCw size={14} className="shrink-0" aria-hidden="true" />
-          O aprendizado retroalimenta os dados, fechando o ciclo.
+          O feedback operacional pode retroalimentar o histórico, fechando o ciclo de melhoria.
         </p>
 
         <div className="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2">
