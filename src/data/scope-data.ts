@@ -77,7 +77,7 @@ export const useCases = [
   {
     letter: 'A',
     title: 'Previsibilidade operacional',
-    description: 'Identificar regiões, trechos, ativos ou contextos com maior probabilidade de recorrência ou ocorrência futura, quando os dados históricos permitirem.',
+    description: 'Identificar regiões, trechos, ativos ou contextos com maior tendência ou risco de recorrência ou ocorrência futura, quando os dados históricos permitirem.',
   },
   {
     letter: 'B',
@@ -164,7 +164,7 @@ export const validationSteps = [
 ];
 
 export const nextValidationHypothesis =
-  'Uma hipótese inicial é priorizar trechos ou regiões com maior probabilidade de recorrência de vazamentos, combinando histórico de serviços, idade/material da rede e pressão hidráulica como conjunto mínimo de dados do piloto.';
+  'Uma hipótese inicial é priorizar trechos ou regiões com maior tendência ou risco de recorrência de vazamentos, combinando histórico de serviços, idade/material da rede e pressão hidráulica como conjunto mínimo de dados do piloto.';
 
 export const businessModelItems = [
   'Assinatura do motor de inteligência (SaneIA Intelligence Engine)',

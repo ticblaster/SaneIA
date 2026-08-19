@@ -7,7 +7,7 @@ const cycle = [
   { icon: Target, title: 'Priorização', description: 'Scores, alertas, regiões críticas e provável necessidade de investigação.' },
   { icon: HardHat, title: 'Ação', description: 'Direcionamento da equipe e escolha do ponto de intervenção.' },
   { icon: ClipboardCheck, title: 'Resultado', description: 'Registro do que foi encontrado e feito em campo.' },
-  { icon: RefreshCw, title: 'Aprendizado', description: 'O resultado da intervenção retorna ao sistema e ajuda a calibrar o modelo.' },
+  { icon: RefreshCw, title: 'Aprendizado', description: 'O resultado da intervenção pode retornar ao histórico e apoiar a recalibração dos modelos.' },
 ];
 
 export default function ProductLogicSection() {

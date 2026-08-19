@@ -15,8 +15,8 @@ export default function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
         <Logo className="[&_span]:!text-white" />
         <p className="max-w-xl text-xs leading-relaxed">
-          SaneIA Água é uma proposta em fase de estruturação, preparada para submissão ao Programa
-          Startup UFT. Todo o conteúdo deste hotsite tem caráter demonstrativo e não representa
+          SaneIA Água é uma proposta submetida ao Programa Startup UFT e atualmente em fase de
+          validação. Todo o conteúdo deste hotsite tem caráter demonstrativo e não representa
           clientes, contratos ou resultados já obtidos.
         </p>
       </div>
