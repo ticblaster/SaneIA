@@ -16,8 +16,8 @@ export default function WaterLossBigNumber() {
             O índice nacional apresentado no Estudo de Perdas de Água 2026 é de 39,53%,
             arredondado aqui para 39,5%. O estudo foi publicado pelo Instituto Trata Brasil em
             parceria com a GO Associados, com referência a dados do SINISA, ano-base 2024. Este
-            indicador é nacional: não representa especificamente Palmas, a BRK Ambiental ou
-            qualquer organização individual.
+            indicador é nacional: não representa especificamente nenhum município, concessionária
+            ou organização individual.
           </p>
           <a
             href="https://tratabrasil.org.br/perdas-de-agua-2026/"

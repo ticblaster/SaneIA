@@ -57,24 +57,27 @@ export default function ProductLogicSection() {
         <div className="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2">
           <div className="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10">
             <h3 className="mb-2 text-sm font-bold uppercase tracking-wide text-blue-200/70">
-              Dashboard tradicional
+              BI e sistemas existentes
             </h3>
-            <p className="text-sm leading-relaxed text-blue-100/90">Mostra o que aconteceu.</p>
+            <p className="text-sm leading-relaxed text-blue-100/90">
+              Organizam e apresentam informações operacionais.
+            </p>
           </div>
           <div className="rounded-2xl bg-white/10 p-6 ring-1 ring-brand-blue/40">
             <h3 className="mb-2 text-sm font-bold uppercase tracking-wide text-white">SaneIA</h3>
             <p className="text-sm leading-relaxed text-blue-50">
-              Busca indicar onde investigar primeiro e quais fatores podem estar contribuindo para
-              a criticidade observada.
+              Adiciona uma camada analítica para transformar esses dados em sinais de decisão —
+              indicando onde investigar primeiro e quais fatores podem estar contribuindo para a
+              criticidade observada.
             </p>
           </div>
         </div>
 
         <p className="mx-auto mt-8 max-w-3xl text-center text-sm leading-relaxed text-blue-200/80">
-          O diferencial do SaneIA está em combinar múltiplas fontes de informação operacional e
-          territorial para gerar uma camada adaptativa de priorização. Os pesos e modelos podem
-          evoluir conforme a realidade de cada rede, cidade ou concessionária e conforme os
-          resultados das intervenções realizadas.
+          O SaneIA complementa o ecossistema existente, não exige substituí-lo. O diferencial está
+          em combinar múltiplas fontes de informação operacional e territorial para gerar uma
+          camada adaptativa de priorização. Os pesos e modelos podem evoluir conforme a realidade
+          de cada rede, cidade ou operador e conforme os resultados das intervenções realizadas.
         </p>
       </div>
     </section>

@@ -1,21 +1,22 @@
-import { Database, UploadCloud, ShieldCheck, Wand2, BrainCircuit, MonitorSmartphone, ArrowRight, ArrowDown } from 'lucide-react';
+import { Database, Plug, ShieldCheck, Wand2, BrainCircuit, MonitorSmartphone, ArrowRight, ArrowDown, Timer } from 'lucide-react';
 import SectionHeading from './ui/SectionHeading';
 import {
   pipelineSources,
-  pipelineExtraction,
+  pipelineIngestion,
   pipelineValidation,
   pipelineTransformation,
   pipelineIntelligence,
   pipelineOutputs,
+  processingModes,
 } from '../data/scope-data';
 
 const stages = [
   { icon: Database, title: 'Fontes de dados', items: pipelineSources },
-  { icon: UploadCloud, title: 'Extração', items: pipelineExtraction },
-  { icon: ShieldCheck, title: 'Validação', items: pipelineValidation },
+  { icon: Plug, title: 'Ingestão e integração', items: pipelineIngestion },
+  { icon: ShieldCheck, title: 'Qualidade e preparação', items: pipelineValidation },
   { icon: Wand2, title: 'Transformação', items: pipelineTransformation },
-  { icon: BrainCircuit, title: 'Inteligência', items: pipelineIntelligence },
-  { icon: MonitorSmartphone, title: 'Saídas', items: pipelineOutputs },
+  { icon: BrainCircuit, title: 'Inteligência operacional', items: pipelineIntelligence },
+  { icon: MonitorSmartphone, title: 'Resultados', items: pipelineOutputs },
 ];
 
 export default function PipelineSection() {
@@ -65,10 +66,29 @@ export default function PipelineSection() {
         </div>
 
         <p className="mx-auto mt-12 max-w-3xl text-center text-sm leading-relaxed text-blue-200/80">
-          O modelo de Machine Learning não substitui a análise humana. Ele atua como ferramenta de
+          Os modelos de inteligência não substituem a análise humana. Eles atuam como ferramenta de
           triagem, identificando padrões que merecem investigação e explicando os principais fatores
           que influenciaram a prioridade atribuída.
         </p>
+
+        <div className="mx-auto mt-14 max-w-4xl rounded-2xl bg-white/5 p-6 ring-1 ring-white/10 sm:p-8">
+          <h3 className="mb-1 flex items-center justify-center gap-2 text-center text-sm font-bold text-white">
+            <Timer size={18} className="text-brand-blue" aria-hidden="true" />
+            Frequência de processamento
+          </h3>
+          <p className="mx-auto mb-5 max-w-2xl text-center text-xs text-blue-200/70">
+            A frequência é orientada pelo SLA e pela natureza de cada dado — não há promessa de
+            tempo real como pré-requisito.
+          </p>
+          <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            {processingModes.map((mode) => (
+              <li key={mode.title} className="rounded-xl bg-white/5 p-4 ring-1 ring-white/10">
+                <span className="text-xs font-bold uppercase tracking-wide text-brand-blue">{mode.title}</span>
+                <p className="mt-1 text-xs leading-relaxed text-blue-100/80">{mode.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );

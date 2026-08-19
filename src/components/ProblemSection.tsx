@@ -2,7 +2,7 @@ import { AlertTriangle, ExternalLink, ListChecks } from 'lucide-react';
 import SectionHeading from './ui/SectionHeading';
 import Card from './ui/Card';
 import Badge from './ui/Badge';
-import { problemEvidenceCards, problemHypothesisCards } from '../data/scope-data';
+import { problemEvidenceCards, problemLowMaturity, problemHighMaturity, problemThesis } from '../data/scope-data';
 
 const problemChain = ['Dado', 'Contexto', 'Prioridade', 'Ação'];
 
@@ -22,11 +22,10 @@ export default function ProblemSection() {
                 consumos não autorizados e inconsistências cadastrais.
               </span>
               <span className="mt-3 block">
-                Sistemas de abastecimento geram grande quantidade de dados sobre serviços, rede,
-                pressão, medições e ocorrências. O desafio não é apenas coletar esses dados: é
-                transformá-los em informação operacional capaz de indicar onde investigar, por que
-                uma região merece atenção e onde os recursos de campo podem produzir maior
-                impacto.
+                O desafio, porém, não é o mesmo para todos os operadores. Alguns ainda enfrentam
+                dificuldade para organizar seus dados; outros já possuem grande volume de dados
+                digitalizados, mas não conseguem transformá-los em conhecimento operacional
+                acionável.
               </span>
             </>
           }
@@ -47,27 +46,27 @@ export default function ProblemSection() {
           ))}
         </div>
 
+        <div className="mt-12">
+          <Badge tone="blue" className="mb-4">
+            Evidências setoriais
+          </Badge>
+          <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {problemEvidenceCards.map((item) => (
+              <Card as="li" key={item} className="flex items-start gap-3 p-4">
+                <ListChecks size={18} className="mt-0.5 shrink-0 text-brand-blue" aria-hidden="true" />
+                <span className="text-sm font-medium text-slate-700">{item}</span>
+              </Card>
+            ))}
+          </ul>
+        </div>
+
         <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div>
-            <Badge tone="blue" className="mb-4">
-              Evidências setoriais
-            </Badge>
-            <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-1">
-              {problemEvidenceCards.map((item) => (
-                <Card as="li" key={item} className="flex items-start gap-3">
-                  <ListChecks size={20} className="mt-0.5 shrink-0 text-brand-blue" aria-hidden="true" />
-                  <span className="text-sm font-medium text-slate-700">{item}</span>
-                </Card>
-              ))}
-            </ul>
-          </div>
-
-          <div>
             <Badge tone="warning" className="mb-4">
-              Hipóteses a validar
+              Baixa maturidade digital
             </Badge>
-            <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-1">
-              {problemHypothesisCards.map((item) => (
+            <ul className="grid grid-cols-1 gap-4">
+              {problemLowMaturity.map((item) => (
                 <Card as="li" key={item} className="flex items-start gap-3">
                   <AlertTriangle size={20} className="mt-0.5 shrink-0 text-amber-500" aria-hidden="true" />
                   <span className="text-sm font-medium text-slate-700">{item}</span>
@@ -75,9 +74,27 @@ export default function ProblemSection() {
               ))}
             </ul>
           </div>
+
+          <div>
+            <Badge tone="blue" className="mb-4">
+              Alta maturidade digital
+            </Badge>
+            <ul className="grid grid-cols-1 gap-4">
+              {problemHighMaturity.map((item) => (
+                <Card as="li" key={item} className="flex items-start gap-3">
+                  <AlertTriangle size={20} className="mt-0.5 shrink-0 text-brand-blue" aria-hidden="true" />
+                  <span className="text-sm font-medium text-slate-700">{item}</span>
+                </Card>
+              ))}
+            </ul>
+          </div>
         </div>
 
-        <div className="mx-auto mt-10 max-w-3xl text-center">
+        <p className="mx-auto mt-10 max-w-2xl text-center text-base font-semibold text-brand-deep">
+          {problemThesis}
+        </p>
+
+        <div className="mx-auto mt-6 max-w-3xl text-center">
           <p className="text-xs text-slate-400">
             Fonte setorial: Instituto Trata Brasil e GO Associados. Estudo de Perdas de Água 2026,
             com dados do SINISA 2024.{' '}

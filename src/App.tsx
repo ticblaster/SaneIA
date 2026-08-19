@@ -5,16 +5,20 @@ import ProblemSection from './components/ProblemSection';
 import SectorValidationSection from './components/SectorValidationSection';
 import AudienceSection from './components/AudienceSection';
 import SolutionSection from './components/SolutionSection';
-import FirstMvpSection from './components/FirstMvpSection';
+import UseCasesSection from './components/UseCasesSection';
+import IntegrationArchitectureSection from './components/IntegrationArchitectureSection';
 import PipelineSection from './components/PipelineSection';
+import SecurityDeploymentSection from './components/SecurityDeploymentSection';
+import FirstMvpSection from './components/FirstMvpSection';
+import DataQualitySection from './components/DataQualitySection';
+import ExplainabilitySection from './components/ExplainabilitySection';
+import ConsumptionModesSection from './components/ConsumptionModesSection';
 import DashboardDemo from './components/DashboardDemo';
 import PrototypeShowcaseSection from './components/PrototypeShowcaseSection';
-import ExplainabilitySection from './components/ExplainabilitySection';
-import DataQualitySection from './components/DataQualitySection';
 import ProductLogicSection from './components/ProductLogicSection';
+import ActorsSection from './components/ActorsSection';
 import ScopeSection from './components/ScopeSection';
 import NonScopeSection from './components/NonScopeSection';
-import ActorsSection from './components/ActorsSection';
 import ValidationSection from './components/ValidationSection';
 import BusinessModelSection from './components/BusinessModelSection';
 import ImpactSection from './components/ImpactSection';
@@ -41,16 +45,20 @@ export default function App() {
         <SectorValidationSection />
         <AudienceSection />
         <SolutionSection />
-        <FirstMvpSection />
+        <UseCasesSection />
+        <IntegrationArchitectureSection />
         <PipelineSection />
+        <SecurityDeploymentSection />
+        <FirstMvpSection />
+        <DataQualitySection />
+        <ExplainabilitySection />
+        <ConsumptionModesSection />
         <DashboardDemo />
         <PrototypeShowcaseSection />
-        <ExplainabilitySection />
-        <DataQualitySection />
         <ProductLogicSection />
+        <ActorsSection />
         <ScopeSection />
         <NonScopeSection />
-        <ActorsSection />
         <ValidationSection />
         <BusinessModelSection />
         <ImpactSection />

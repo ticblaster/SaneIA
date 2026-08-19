@@ -1,13 +1,16 @@
 import { Building2 } from 'lucide-react';
 import SectionHeading from './ui/SectionHeading';
 import Card from './ui/Card';
-import { audienceCards } from '../data/scope-data';
+import { audienceCards, audienceNote } from '../data/scope-data';
 
 export default function AudienceSection() {
   return (
     <section className="bg-brand-mist py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Público-alvo" title="Para quem desenvolvemos a solução" />
+        <SectionHeading
+          eyebrow="Público-alvo"
+          title="Para operadores de diferentes portes e arquiteturas de dados"
+        />
 
         <ul className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {audienceCards.map((card) => (
@@ -21,10 +24,7 @@ export default function AudienceSection() {
           ))}
         </ul>
 
-        <p className="mx-auto mt-10 max-w-3xl text-center text-sm text-slate-500">
-          Embora o nome de alguns órgãos contenha "Água e Esgoto", o primeiro MVP demonstrativo
-          abrange somente o abastecimento de água.
-        </p>
+        <p className="mx-auto mt-10 max-w-3xl text-center text-sm text-slate-500">{audienceNote}</p>
       </div>
     </section>
   );

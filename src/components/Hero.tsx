@@ -13,9 +13,12 @@ export default function Hero() {
             Inteligência operacional para transformar dados de saneamento em prioridades de ação.
           </h1>
           <p className="max-w-xl text-lg leading-relaxed text-slate-600">
-            A SaneIA cruza dados operacionais, históricos e territoriais para identificar padrões,
-            priorizar regiões críticas e apoiar equipes na decisão de onde investigar e agir
-            primeiro. A redução de perdas e vazamentos é o primeiro caso de uso.
+            A SaneIA se conecta às fontes de dados que o operador já possui — planilhas, sistemas
+            corporativos, bancos, APIs ou data lakes — e cruza informações operacionais,
+            históricas, hidráulicas e territoriais para apoiar previsibilidade, identificar
+            padrões e priorizar onde investigar e agir primeiro. A redução de perdas é o primeiro
+            domínio de aplicação; o dashboard é apenas uma das formas possíveis de consumir esses
+            resultados.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <a

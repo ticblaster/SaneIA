@@ -1,17 +1,18 @@
-import { Upload, ShieldCheck, Radar, ListOrdered, ClipboardCheck } from 'lucide-react';
+import { Plug, ShieldCheck, GitMerge, BrainCircuit, Share2, RefreshCw } from 'lucide-react';
 
 const steps = [
-  { icon: Upload, label: 'Importação de planilhas' },
-  { icon: ShieldCheck, label: 'Tratamento e padronização' },
-  { icon: Radar, label: 'Detecção de anomalias' },
-  { icon: ListOrdered, label: 'Score de prioridade' },
-  { icon: ClipboardCheck, label: 'Ordens de serviço' },
+  { icon: Plug, label: 'Conexão com fontes' },
+  { icon: ShieldCheck, label: 'Qualidade e preparação' },
+  { icon: GitMerge, label: 'Engenharia de atributos' },
+  { icon: BrainCircuit, label: 'Inteligência operacional' },
+  { icon: Share2, label: 'Entrega dos resultados' },
+  { icon: RefreshCw, label: 'Feedback e aprendizado' },
 ];
 
 export default function SolutionFlowIllustration() {
   return (
     <div className="w-full overflow-x-auto">
-      <div className="flex min-w-[640px] items-center justify-between gap-2 px-2 py-6 md:min-w-0">
+      <div className="flex min-w-[720px] items-center justify-between gap-2 px-2 py-6 md:min-w-0">
         {steps.map((step, index) => {
           const Icon = step.icon;
           return (

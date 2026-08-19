@@ -1,13 +1,36 @@
 # SaneIA Água
 
-Hotsite institucional da proposta **SaneIA Água**: inteligência operacional para redução de
-perdas e priorização de ações no abastecimento de água.
+Hotsite institucional da proposta **SaneIA Água**: uma camada de inteligência operacional para
+saneamento, que se conecta às fontes de dados existentes do operador e produz sinais analíticos
+de previsibilidade, anomalia, criticidade e produtividade. A redução de perdas de água é o
+primeiro domínio de aplicação.
 
-> **Aviso importante**: este projeto é um **MVP demonstrativo**. Todos os dados exibidos no
-> painel de BI, gráficos, ranking de ocorrências e ordens de serviço são **sintéticos e
-> fictícios**, usados apenas para ilustrar visualmente a proposta. O site não possui backend,
-> banco de dados, autenticação real ou integração com sistemas externos. Não há afirmação de
-> clientes, contratos, parcerias ou resultados já obtidos.
+> **Aviso importante**: este projeto é um **protótipo/MVP em fase de validação**. Todos os dados
+> exibidos no painel demonstrativo, gráficos, ranking de ocorrências e ordens de serviço são
+> **sintéticos e fictícios**, usados apenas para ilustrar visualmente a proposta. O site não
+> possui backend, banco de dados, autenticação real ou integração com sistemas externos — a
+> arquitetura de integração descrita no hotsite (fontes, conectores, camada de inteligência,
+> segurança e implantação) é **conceitual**, ainda não implementada em produção. Não há afirmação
+> de clientes, contratos, parcerias formais ou resultados operacionais já obtidos.
+
+## Posicionamento do produto
+
+O SaneIA é apresentado como uma camada de inteligência **independente das fontes e dos sistemas
+de saída do operador** (source-agnostic e output-agnostic):
+
+- não é apenas um dashboard — o dashboard é uma das formas possíveis de consumir os resultados;
+- não depende de uma plataforma de dados específica (ex.: um lakehouse corporativo em particular)
+  — "data lake/lakehouse corporativo" é tratado como um exemplo de fonte entre vários;
+- não depende de CSV/Excel — arquivos são uma forma de ingestão possível, não a definição da
+  plataforma;
+- não é definido por um único algoritmo de Machine Learning — combina estatística, regras de
+  domínio e modelos de ML, escolhidos conforme o caso de uso;
+- se adapta a diferentes níveis de maturidade digital do operador, sem tratar nenhum caminho de
+  integração como comercialmente superior a outro.
+
+A interface visual (motor de ML, painel de BI etc.) é desacoplada da lógica de inteligência: o
+hotsite existe para comunicar a arquitetura conceitual, não para demonstrar um motor analítico
+real conectado a dados de produção.
 
 ## Visão geral
 
@@ -16,7 +39,7 @@ O hotsite funciona simultaneamente como:
 1. apresentação institucional da proposta;
 2. documento de escopo preliminar;
 3. protótipo visual do futuro produto;
-4. material de apoio a entrevistas com potenciais clientes;
+4. material de apoio a entrevistas e reuniões técnicas de validação com potenciais operadores;
 5. material de apoio à submissão ao Programa Startup UFT (Pré-Incubação);
 6. demonstração de viabilidade técnica e mercadológica.
 
@@ -147,17 +170,22 @@ subdiretório do GitHub Pages (`/nome-do-repositorio/`).
 
 - **Textos institucionais** (títulos, descrições, cards de texto fixo): editar diretamente os
   componentes em `src/components/*.tsx`.
-- **Escopo, não escopo, público-alvo, hipóteses, roadmap, atores, modelo de negócio, impactos**:
+- **Escopo, não escopo, público-alvo, casos de uso, arquitetura de integração, segurança e
+  implantação, formas de consumo, hipóteses, roadmap, atores, modelo de negócio, impactos**:
   editar `src/data/scope-data.ts`.
-- **Indicadores e gráficos do painel de BI** (KPIs, evolução de perdas, anomalias por região,
-  tipos de alerta, mapa de calor, ranking de ocorrências, ordens de serviço, fatores de
+- **Indicadores e gráficos do painel demonstrativo** (KPIs, evolução de perdas, anomalias por
+  região, tipos de alerta, mapa de calor, ranking de ocorrências, ordens de serviço, fatores de
   explicabilidade): editar `src/data/dashboard-data.ts`.
 - **Equipe**: editar `src/data/team-data.ts`.
+
+Componentes de seção adicionados para o novo posicionamento (camada de inteligência
+source-agnostic e output-agnostic): `UseCasesSection`, `IntegrationArchitectureSection`,
+`SecurityDeploymentSection` e `ConsumptionModesSection`.
 
 ## Como substituir os dados sintéticos
 
 Todos os números do painel demonstrativo (`src/data/dashboard-data.ts`) são fictícios. Para
-atualizá-los com dados reais no futuro (fora do escopo atual deste MVP estático):
+atualizá-los com dados reais no futuro (fora do escopo atual deste hotsite estático):
 
 1. Seria necessário introduzir uma camada de backend, API ou banco de dados, o que está fora do
    escopo deste hotsite estático.
@@ -169,9 +197,13 @@ atualizá-los com dados reais no futuro (fora do escopo atual deste MVP estátic
 ## Limitações atuais
 
 - Não há backend, banco de dados, autenticação ou chamadas a APIs externas.
+- Não há conectores, camada de integração ou motor de inteligência reais: a arquitetura de
+  ingestão, tratamento, engenharia de atributos e entrega de resultados descrita no hotsite é
+  **conceitual**, ainda sujeita a validação técnica com cada operador.
 - O formulário de contato é demonstrativo: não envia dados a nenhum servidor.
 - Os botões do painel de ordens de serviço (criar, visualizar, marcar como em campo) abrem
   apenas um modal informativo local, sem persistência.
-- Os indicadores, gráficos e ranking do painel de BI usam exclusivamente dados sintéticos.
-- Este é um **MVP demonstrativo** em fase de pré-incubação: o escopo, o modelo de negócio e as
-  hipóteses aqui descritos estão sujeitos a validação e podem mudar significativamente.
+- Os indicadores, gráficos e ranking do painel demonstrativo usam exclusivamente dados sintéticos.
+- Este é um **protótipo/MVP em fase de validação**: o escopo, o modelo de negócio, a arquitetura
+  de integração/segurança e as hipóteses aqui descritos estão sujeitos a validação e podem mudar
+  significativamente antes de qualquer piloto real.

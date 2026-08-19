@@ -1,5 +1,7 @@
+import { BrainCog } from 'lucide-react';
 import SectionHeading from './ui/SectionHeading';
 import { explainabilityFactors } from '../data/dashboard-data';
+import { aiPositioningPoints } from '../data/scope-data';
 
 export default function ExplainabilitySection() {
   return (
@@ -42,6 +44,20 @@ export default function ExplainabilitySection() {
           Cada alerta deve apresentar justificativas compreensíveis para que a equipe operacional
           possa avaliar a recomendação antes de agir.
         </p>
+
+        <div className="mx-auto mt-14 max-w-3xl rounded-2xl border border-brand-blue/20 bg-brand-mist/40 p-6 sm:p-8">
+          <h3 className="mb-4 flex items-center justify-center gap-2 text-center text-base font-bold text-brand-deep">
+            <BrainCog size={20} className="text-brand-teal" aria-hidden="true" />
+            A IA do SaneIA não é um único modelo
+          </h3>
+          <ul className="flex flex-col gap-2.5">
+            {aiPositioningPoints.map((point) => (
+              <li key={point} className="text-sm leading-relaxed text-slate-600">
+                · {point}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );
